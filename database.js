@@ -88,6 +88,9 @@ console.log("Registro do ID 2 removido")
     
 
     const resultadoFinal = await db.all(`SELECT * FROM incidentes`);
-    console.table(resultadoFinal)
+    console.table(resultadoFinal);
+
+return db;
 };
-criarBanco();
+
+module.exports = {criarBanco};
